@@ -17,11 +17,11 @@ pipeline {
             }
         }
 
-        stage('Build Docker Image') {
-            steps {
-                bat 'docker build -t student-feedback .'
-            }
-        }
+       stage('Build Docker Image') {
+    steps {
+        bat 'set PATH=C:\\Program Files\\Docker\\Docker\\resources\\bin;%PATH% && docker build -t student-feedback .'
+    }
+}
 
         stage('Deploy Docker Container') {
             steps {
