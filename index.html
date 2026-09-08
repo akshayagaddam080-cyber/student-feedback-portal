@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Feedback Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Feedback Portal</h1>
+
+        <p class="subtitle">
+            Your feedback helps us improve
+        </p>
+
+        <form id="feedbackForm">
+
+            <label>Student Name</label>
+            <input
+                type="text"
+                id="studentName"
+                placeholder="Enter your name"
+                required
+            >
+
+            <label>Student ID</label>
+            <input
+                type="text"
+                id="studentId"
+                placeholder="Enter your student ID"
+                required
+            >
+
+            <label>Course</label>
+            <input
+                type="text"
+                id="course"
+                placeholder="Enter your course"
+                required
+            >
+
+            <label>Rating</label>
+
+            <select id="rating" required>
+                <option value="">Select Rating</option>
+                <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+                <option value="4">⭐⭐⭐⭐ Very Good</option>
+                <option value="3">⭐⭐⭐ Good</option>
+                <option value="2">⭐⭐ Fair</option>
+                <option value="1">⭐ Poor</option>
+            </select>
+
+            <label>Feedback</label>
+
+            <textarea
+                id="feedback"
+                placeholder="Write your feedback here..."
+                required
+            ></textarea>
+
+            <button type="submit">
+                Submit Feedback
+            </button>
+
+        </form>
+
+        <p id="message"></p>
+
+        <div class="feedback-section">
+
+            <h2>Submitted Feedback</h2>
+
+            <div id="feedbackList"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
