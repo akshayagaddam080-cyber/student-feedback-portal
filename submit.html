@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Feedback - SmartCampus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>SmartCampus.</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="submit.html">Submit Feedback</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="analytics.html">Analytics</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="welcome" style="min-height:150px; padding:25px;">
+            <p class="eyebrow">Your Voice Matters</p>
+            <h2 style="font-size:30px;">Share Your Experience</h2>
+            <p>Help us make our campus better through your valuable feedback.</p>
+        </section>
+
+        <section class="feedback-layout">
+
+            <aside class="info-panel">
+                <h2>Every Voice Creates Change!</h2>
+                <p>
+                    Your feedback helps us improve teaching quality,
+                    campus facilities, and the overall student experience.
+                </p>
+
+                <div class="info-item">
+                    <h3>✓ Easy Submission</h3>
+                    <p>Express your thoughts and suggestions.</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>✓ Real Improvements</h3>
+                    <p>Help us make learning better for everyone.</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>✓ Make an Impact</h3>
+                    <p>Your suggestions help improve our campus.</p>
+                </div>
+            </aside>
+
+            <section class="form-panel">
+                <h2>Student Feedback Form</h2>
+                <p>Please fill in the details below.</p>
+
+                <form id="feedbackForm">
+
+                    <label for="studentName">Student Name *</label>
+                    <input
+                        type="text"
+                        id="studentName"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                    <label for="studentId">Student ID *</label>
+                    <input
+                        type="text"
+                        id="studentId"
+                        placeholder="Enter your student ID"
+                        required
+                    >
+
+                    <label for="course">Course *</label>
+                    <input
+                        type="text"
+                        id="course"
+                        placeholder="e.g. CSE (AI & ML)"
+                        required
+                    >
+
+                    <label for="category">Feedback Category *</label>
+                    <select id="category" required>
+                        <option value="">Select a category</option>
+                        <option value="Teaching">Teaching</option>
+                        <option value="Infrastructure">Infrastructure</option>
+                        <option value="Library">Library</option>
+                        <option value="Laboratory">Laboratory</option>
+                        <option value="Canteen">Canteen</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+                    <label for="rating">Overall Rating *</label>
+                    <select id="rating" required>
+                        <option value="">Select your rating</option>
+                        <option value="5">★★★★★ - Excellent</option>
+                        <option value="4">★★★★ - Very Good</option>
+                        <option value="3">★★★ - Good</option>
+                        <option value="2">★★ - Fair</option>
+                        <option value="1">★ - Poor</option>
+                    </select>
+
+                    <label for="feedback">Your Feedback *</label>
+                    <textarea
+                        id="feedback"
+                        rows="4"
+                        placeholder="Write your feedback here..."
+                        required
+                    ></textarea>
+
+                    <button type="submit">Submit Feedback →</button>
+
+                    <p style="font-size:12px; color:#77758d; margin-top:12px;">
+                        Your feedback helps us improve SmartCampus.
+                    </p>
+
+                </form>
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 SmartCampus Feedback Portal</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

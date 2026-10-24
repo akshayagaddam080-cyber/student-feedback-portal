@@ -1,88 +1,86 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Student Feedback Portal</title>
-
+    <title>SmartCampus - Student Feedback Portal</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <div class="container">
+    <header>
+        <h1>SmartCampus.</h1>
 
-        <h1>Student Feedback Portal</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="submit.html">Submit Feedback</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="analytics.html">Analytics</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
 
-        <p class="subtitle">
-            Your feedback helps us improve
-        </p>
+    <main class="container">
 
-        <form id="feedbackForm">
+        <section class="welcome">
+            <p class="eyebrow">Smarter Campus, Better Tomorrow</p>
 
-            <label>Student Name</label>
-            <input
-                type="text"
-                id="studentName"
-                placeholder="Enter your name"
-                required
-            >
+            <h2>Your Voice.<br>Our Improvement.</h2>
 
-            <label>Student ID</label>
-            <input
-                type="text"
-                id="studentId"
-                placeholder="Enter your student ID"
-                required
-            >
+            <p>
+                Welcome to SmartCampus, a student feedback platform designed
+                to improve education, campus facilities, and the overall
+                student experience.
+            </p>
 
-            <label>Course</label>
-            <input
-                type="text"
-                id="course"
-                placeholder="Enter your course"
-                required
-            >
+            <div class="hero-buttons">
+                <a class="button-link button-secondary" href="submit.html">
+                    Submit Feedback
+                </a>
 
-            <label>Rating</label>
+                <a class="button-link button-secondary" href="feedback.html">
+                    Explore Feedback
+                </a>
+            </div>
 
-            <select id="rating" required>
-                <option value="">Select Rating</option>
-                <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
-                <option value="4">⭐⭐⭐⭐ Very Good</option>
-                <option value="3">⭐⭐⭐ Good</option>
-                <option value="2">⭐⭐ Fair</option>
-                <option value="1">⭐ Poor</option>
-            </select>
+            <h3>Every Voice Matters</h3>
 
-            <label>Feedback</label>
+            <p>
+                Your feedback helps us create a better learning environment.
+            </p>
 
-            <textarea
-                id="feedback"
-                placeholder="Write your feedback here..."
-                required
-            ></textarea>
+            <p>★★★★★</p>
+            <p>Building a better campus together.</p>
+        </section>
 
-            <button type="submit">
-                Submit Feedback
-            </button>
+        <section class="stats-grid">
 
-        </form>
+            <div class="analytics-card">
+                <h2>Total Feedback</h2>
+                <p id="homeTotalFeedback">Total Feedback: 0</p>
+            </div>
 
-        <p id="message"></p>
+            <div class="analytics-card">
+                <h2>Average Rating</h2>
+                <p id="homeAverageRating">0.0 / 5</p>
+            </div>
 
-        <div class="feedback-section">
+            <div class="analytics-card">
+                <h2>Share Your Experience</h2>
+                <p>Every opinion counts.</p>
+                <a class="button-link" href="submit.html">Get Started</a>
+            </div>
 
-            <h2>Submitted Feedback</h2>
+        </section>
 
-            <div id="feedbackList"></div>
+    </main>
 
-        </div>
-
-    </div>
+    <footer>
+        <p>© 2026 SmartCampus Feedback Portal</p>
+    </footer>
 
     <script src="script.js"></script>
-
 </body>
 </html>
+

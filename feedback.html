@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback - SmartCampus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>SmartCampus.</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="submit.html">Submit Feedback</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="analytics.html">Analytics</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="welcome" style="min-height:180px; padding:30px;">
+            <p class="eyebrow">Student Voices</p>
+            <h2 style="font-size:34px;">Student Feedback</h2>
+            <p>Explore student experiences and suggestions for a better campus.</p>
+        </section>
+
+        <section class="filter-bar">
+            <input
+                type="search"
+                id="searchFeedback"
+                placeholder="Search by student, course, or feedback..."
+                aria-label="Search feedback"
+            >
+
+            <select id="filterCategory" aria-label="Filter by category">
+                <option value="">All Categories</option>
+                <option value="Teaching">Teaching</option>
+                <option value="Infrastructure">Infrastructure</option>
+                <option value="Library">Library</option>
+                <option value="Laboratory">Laboratory</option>
+                <option value="Canteen">Canteen</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <select id="filterRating" aria-label="Filter by rating">
+                <option value="">All Ratings</option>
+                <option value="5">5 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="2">2 Stars</option>
+                <option value="1">1 Star</option>
+            </select>
+        </section>
+
+        <section>
+            <h2>Feedback Submissions</h2>
+            <p id="feedbackCount">Total submissions: 0</p>
+
+            <div id="feedbackList">
+                <p>No feedback submitted yet.</p>
+            </div>
+        </section>
+
+        <p>
+            <a class="button-link" href="submit.html">+ Submit New Feedback</a>
+        </p>
+
+    </main>
+
+    <footer>
+        <p>© 2026 SmartCampus Feedback Portal</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

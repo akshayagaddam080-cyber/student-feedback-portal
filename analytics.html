@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Analytics - SmartCampus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>SmartCampus.</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="submit.html">Submit Feedback</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="analytics.html">Analytics</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="welcome" style="min-height:180px; padding:30px;">
+            <p class="eyebrow">Insights &amp; Performance</p>
+            <h2 style="font-size:34px;">Feedback Analytics</h2>
+            <p>Understand student satisfaction and identify opportunities for improvement.</p>
+        </section>
+
+        <section class="stats-grid">
+
+            <div class="analytics-card">
+                <h2>Total Feedback</h2>
+                <p id="totalFeedback">0</p>
+            </div>
+
+            <div class="analytics-card">
+                <h2>Average Rating</h2>
+                <p id="averageRating">0.0 / 5</p>
+            </div>
+
+            <div class="analytics-card">
+                <h2>Positive Feedback</h2>
+                <p id="positiveFeedback">0%</p>
+            </div>
+
+        </section>
+
+        <section class="analytics-card">
+            <h2>Category-wise Feedback</h2>
+            <p>Compare student ratings across campus services.</p>
+            <div id="categoryStats">
+                <p>No feedback data available yet.</p>
+            </div>
+        </section>
+
+        <section class="analytics-card">
+            <h2>Rating Distribution</h2>
+            <p>See how students rated their campus experience.</p>
+            <div id="ratingDistribution">
+                <p>No feedback data available yet.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 SmartCampus Feedback Portal</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
